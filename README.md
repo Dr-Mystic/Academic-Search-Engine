@@ -17,7 +17,9 @@ Ensure you have the following dependencies installed:
 - Pickle
 
 You can install the required packages using the following command:  
-*pip install -r requirements.txt*
+```bash
+pip install -r requirements.txt
+```
 
 ## Dataset
 The dataset used in this project is the DBLP dataset, which contains metadata of academic papers such as titles, authors, venues, publication years, and abstracts. The dataset should be provided as a CSV file (dblp-v10.csv). It must be downloaded from [here.](https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip)
@@ -29,13 +31,17 @@ The dataset used in this project is the DBLP dataset, which contains metadata of
 ## Usage
 - **Step 1: Generate the FAISS Index**  
 Run the model.py script to generate embeddings and save the FAISS index:  
-*python model.py*  
+```bash
+python model.py
+```
 This will create two files:  
 *faiss_index.bin*: The FAISS index containing the paper titles' embeddings.  
 *titles.pkl*: A pickle file containing the list of paper titles.
 - **Step 2: Run the Streamlit App**  
 Once the index and embeddings are saved, you can run the Streamlit app:  
-*streamlit run app.py*  
+```bash
+streamlit run app.py
+```  
 This will launch a web interface where users can input search queries and receive results based on the similarity of their query to paper titles.
 
 ## Example Queries
