@@ -50,3 +50,6 @@ Try searching for:
 - "Natural language processing"
 - "Deep learning"  
 The engine will return a list of academic papers that match the query.
+
+## License
+This project is licensed under the MIT License.
